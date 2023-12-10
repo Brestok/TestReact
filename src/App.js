@@ -1,5 +1,7 @@
 import Costs from "./components/Costs";
 
+import "./App.css"
+
 
 function App() {
     const costs = [
@@ -22,7 +24,7 @@ function App() {
 
   return (
       <div>
-        <h1>Hello World</h1>
+        <h1 className="container">Cost App</h1>
         <Costs costs = {costs}/>
       </div>
   );
