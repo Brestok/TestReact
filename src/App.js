@@ -1,9 +1,10 @@
 import Costs from "./components/Costs";
+import NewCost from "./components/NewCost/NewCost";
 
 import "./App.css"
 
 
-function App() {
+const App = () => {
     const costs = [
         {
             date: new Date(2023, 3, 11),
@@ -25,7 +26,8 @@ function App() {
   return (
       <div>
         <h1 className="container">Cost App</h1>
-        <Costs costs = {costs}/>
+        <NewCost />
+        <Costs costs = {costs} />
       </div>
   );
 }
